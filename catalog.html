@@ -101,6 +101,15 @@
             <section class="filters">
                 <h2 class="filters-title">Фильтр</h2>
                 <form action="#" method="get">
+                  <fieldset>
+                    <legend>ЦЕНА:</legend>
+                        <p><input type="range" id="volume" name="volume" min="0" max="3500"></p>
+                        <div class="range-start-end-labels">
+                          <span class="range-start">0</span>
+                          <span>-</span>
+                          <span class="range-end">30000</span>
+                        </div>
+                   </fieldset>
                     <fieldset>
                         <legend>ПРОИЗВОДИТЕЛИ:</legend>
                             <p><label><input type="checkbox" name="manufacturer" value="BOSH" checked>BOSH</label></p>
@@ -118,7 +127,27 @@
                 </form>
             </section>
             <section class="catalog">
-                <h2 class="catalog-title">Каталог</h2>
+                <header class="catalog__header">
+                  <h2 class="catalog-title">Каталог</h2>
+                  <p>СОРТИРОВКА:</p>
+                  <ul class="catalog-sorting-list">
+                    <li class="catalog-sorting-item">
+                      <button type="button">ПО ЦЕНЕ</button>
+                    </li>
+                    <li class="catalog-sorting-item">
+                      <button type="button">ПО ТИПУ</button>
+                    </li>
+                    <li class="catalog-sorting-item">
+                      <button type="button">ПО ФУНКЦИОНАЛУ</button>
+                    </li>
+                    <li class="catalog-sorting-item">
+                      <div class="top-bottom-sorting">
+                        <button type="button">TOP</button>
+                        <button type="button">BOTTOM</button>
+                      </div>
+                    </li>
+                  </ul>
+                </header>
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <article>
@@ -229,8 +258,24 @@
                         </div>
                     </li>
                 </ul>
+                <ul class="catalog__pagination-list">
+                  <li class="catalog__pagination-item"><a class="catalog__pagination-link" href="">1</a></li>
+                  <li class="catalog__pagination-item"><a class="catalog__pagination-link" href="">2</a></li>
+                  <li class="catalog__pagination-item"><a class="catalog__pagination-link" href="">3</a></li>
+                  <li class="catalog__pagination-item"><a class="catalog__pagination-link" href="">СЛЕДУЮЩАЯ</a></li>
+                </ul>
             </section>
         </div>
+        <section class="about-perforators">
+          <div class="about-perforators__inner">
+              <h2 class="about-perforators__title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+              <p>
+                Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.  <br>
+                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. <br>
+                В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+              </p>
+          </div>
+        </section>
     </main>
     
     <footer class="main-footer">
