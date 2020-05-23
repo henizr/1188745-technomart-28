@@ -89,27 +89,36 @@
             <section class="filters">
                 <h2 class="filters-title">Фильтр</h2>
                 <form action="#" method="get">
-                  <fieldset>
-                    <legend>ЦЕНА:</legend>
-                        <div><input type="range" id="volume" name="volume" min="0" max="3500"></div>
-                        <div class="range-start-end-labels">
-                          <span class="range-start">0</span>
-                          <span>-</span>
-                          <span class="range-end">30000</span>
+                    <fieldset>
+                      <legend>ЦЕНА:</legend>
+                        <div class="range-slider">
+                          <div class="range-slider__line"></div>
+                          <div class="range-slider__thumb-start"></div>
+                          <div class="range-slider__thumb-end"></div>
+                          <input type="hidden">
                         </div>
-                   </fieldset>
+                        <div class="range-start-end-labels">
+                          <input type="text" class="range-start" placeholder="0">
+                          <span>-</span>
+                          <input type="text"  class="range-end"  placeholder="30000">
+                        </div>
+                    </fieldset>
                     <fieldset>
                         <legend>ПРОИЗВОДИТЕЛИ:</legend>
-                            <div><label><input type="checkbox" name="manufacturer" value="BOSH" checked>BOSH</label></div>
-                            <div><label><input type="checkbox" name="manufacturer" value="INTERSKOL">ИНТЕРСКОЛ</label></div>
-                            <div><label><input type="checkbox" name="manufacturer" value="MAKITA" checked>MAKITA</label></div>
-                            <div><label><input type="checkbox" name="manufacturer" value="DEWALT">DEWALT</label></div>
-                            <div><label><input type="checkbox" name="manufacturer" value="HITACHI">HITACHI</label></div>
+                            <ul class="manufacturers-list"> 
+                                <li class="manufacturers-item"><label><input type="checkbox" name="manufacturer" value="BOSH" checked>BOSH</label></li>
+                                <li class="manufacturers-item"></li><label><input type="checkbox" name="manufacturer" value="INTERSKOL">ИНТЕРСКОЛ</label></li>
+                                <li class="manufacturers-item"></li><label><input type="checkbox" name="manufacturer" value="MAKITA" checked>MAKITA</label></li>
+                                <li class="manufacturers-item"></li><label><input type="checkbox" name="manufacturer" value="DEWALT">DEWALT</label></li>
+                                <li class="manufacturers-item"></li><label><input type="checkbox" name="manufacturer" value="HITACHI">HITACHI</label></li>
+                            </ul>
                     </fieldset>
                     <fieldset>
                         <legend>ПИТАНИЕ:</legend>  
-                        <div><label><input type="radio" name="power" value="rechargeable" checked>АККУМУЛЯТОРНЫЕ</label></div> 
-                        <div><label><input type="radio" name="power" value="network">СЕТЕВЫЕ</label></div>  
+                        <ul class="power-list"> 
+                          <li class="power-item"><label><input type="radio" name="power" value="rechargeable" checked>АККУМУЛЯТОРНЫЕ</label></li>
+                          <li class="power-item"><label><input type="radio" name="power" value="network">СЕТЕВЫЕ</label></li>
+                        </ul>  
                     </fieldset>
                     <button type="submit">ПОКАЗАТЬ</button>
                 </form>
