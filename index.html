@@ -66,50 +66,65 @@
         <h2 class="promo-title">Скидки, акции, спецпредложения</h2>
          
           
-            <ul class="promo__products-list">
-              <li class="promo__products-item">
-                <div class="promo__products-text">
-                  <h3>Материалы</h3>
-                  <a href="">НА ЛЮБОЙ ВКУС</a>
-                </div>
-                <div class="promo__products-icon"></div>
-              </li>
-              <li class="promo__products-item">
-                <div class="promo__products-text">
-                  <h3>Инструмент</h3>
-                  <a href="">НА ВСЕ СЛУЧАИ</a>
-                </div>
-                <div class="promo__products-icon"></div>
-              </li>
-              <li class="promo__products-item">
-                <div class="promo__products-text">
-                  <h3>Техника</h3>
-                  <a href="">Для стройки</a>
-                </div>
-                <div class="promo__products-icon"></div>
-              </li>
-            </ul>
+        <ul class="promo__products-list">
+          <li class="promo__products-item">
+              <section class="promo-products-content">
+                      <h3>Материалы</h3>
+                      <a href="">НА ЛЮБОЙ ВКУС</a>
+              </section>
+                  <div class="promo__products-icon"></div>
+          </li>
+          <li class="promo__products-item">
+              <section class="promo-products-content">
+                      <h3>Инструмент</h3>
+                      <a href="">НА ВСЕ СЛУЧАИ</a>
+              </section>
+                  <div class="promo__products-icon"></div>
+          </li>
+          <li class="promo__products-item">
+              <section class="promo-products-content">
+                      <h3>Техника</h3>
+                      <a href="">Для стройки</a>
+              </section>
+                  <div class="promo__products-icon"></div>
+          </li>
+        </ul>
            
            
             <div class="promo__slider">
-              <h3>ПЕРФОРАТОРЫ</h3>
-              <p>Настоящие мужские игрушки</p>
+              <section class="promo__slider-top">
+                  <h3>ПЕРФОРАТОРЫ</h3>
+                  <p>Настоящие мужские игрушки</p>
+              </section>
+              <div class="promo__slider-buttons-control">
+                  <button type="button">prev</button>
+                  <button type="button">next</button>
+              </div>
               <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+              <div class="container slider-container">
+                <input id="btn-1" type="radio" name="name" value="1" class="input-1" checked="">
+                <input id="btn-2" type="radio" name="name" value="2">
+                <div class="slider-tumbler">
+                  <label class="slider-tumbler-marker" for="btn-1"></label>
+                  <label class="slider-tumbler-marker tumbler-2" for="btn-2"></label>
+                </div>
+                <div class="slides"> </div>
+              </div>
             </div>
 
             <div class="promo__discounts-delivery">
               <div class="promo__discounts">
-                <div class="promo__products-text">
+                <section class="promo__products-text">
                   <h3>Скидки 50%</h3>
                   <a href="">НА 350 ТОВАРОВ</a>
-                </div>
+                </section>
                 <div class="promo__products-icon"></div>
               </div>
               <div class="promo__delivery">
-                <div class="promo__products-text">
+                <section class="promo__products-text">
                   <h3>Доставка</h3>
                   <a href="">БЕСПЛАТНО</a>
-                </div>
+                </section>
                 <div class="promo__products-icon"></div>
               </div>
             </div>
