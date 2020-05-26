@@ -255,7 +255,7 @@
                 Ведь мы неплохо заработаем,
                 поднимая его на ваш этаж!</p>
             </div>
-            <div class="services__slider-content-image" aria-label="hidden"></div>
+            <div class="services__slider-content-image" aria-hidden="true"></div>
           </div>
         </div>
       </section>
@@ -354,8 +354,39 @@
             Разработано -
             <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
-        
-       
+          
+          <section class="modal-map">
+            <h2 class="modal-map__title visually-hidden">Интерактивная карта с нашим адресом</h2>
+            <!-- тут должна быть интерактивная карта -->
+            <button type="button"><span class="visually-hidden">закрыть</span></button>
+          </section>
+
+          <section class="modal-feedback">
+            <h2 class="modal-feedback__title visually-hidden">свяжитесь с нами</h2>
+
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <div class="modal-feedback__name-email">
+                <div class="modal-feedback__name">
+                  <label for="name">Ваше имя</label>
+                  <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+                </div>
+                <div class="modal-feedback__email">
+                  <label for="email">Ваше e-mail</label>
+                  <input type="email" name="email" id="email" placeholder="email@example.com">
+                </div>
+              </div>
+  
+              <div class="modal-feedback__text">
+                <label for="text-content">Текст письма</label>
+                <textarea name="text-content" id="text-content" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+              </div>
+  
+              <button type="submit">отправить</button>
+            </form>
+
+            <button type="button"><span class="visually-hidden">закрыть</span></button>
+          </section>
+
     </footer>
   </body>
 </html>
