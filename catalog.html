@@ -75,7 +75,7 @@
     <main class="main-content">
         <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="">ДОМОЙ</a>
+                <a class="breadcrumbs-link" href=""><span class="visually-hidden">ДОМОЙ</span></a>
             </li>
             <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="">КАТАЛОГ</a>
@@ -91,7 +91,7 @@
         <div class="filters-catalog">
             <section class="filters">
                 <h2 class="filters-title">Фильтр</h2>
-                <form action="#" method="get">
+                <form action="https://echo.htmlacademy.ru/" method="get">
                     <fieldset>
                       <legend>ЦЕНА:</legend>
                         <div class="range-slider">
@@ -101,9 +101,11 @@
                           <input type="hidden">
                         </div>
                         <div class="range-start-end-labels">
-                          <input type="text" class="range-start" placeholder="0">
-                          <span>-</span>
-                          <input type="text"  class="range-end"  placeholder="30000">
+                          <label for="range-start"><span class="visually-hidden">начало диапазона цены</span></label>
+                          <input type="text" id="range-start" name="range-start" class="range-start" placeholder="0">
+                          <span aria-hidden="true">-</span>
+                          <label for="range-end"><span class="visually-hidden">конец диапазона цены</span></label>
+                          <input type="text" id="range-end" name="range-end"  class="range-end"   placeholder="30000">
                         </div>
                     </fieldset>
                     <fieldset>
@@ -128,7 +130,7 @@
             </section>
             <section class="catalog">
                 <header class="catalog__header">
-                  <h2 class="catalog-title">Каталог</h2>
+                  <h2 class="catalog-title visually-hidden">Каталог</h2>
                   <p>СОРТИРОВКА:</p>
                   <ul class="catalog-sorting-list">
                     <li class="catalog-sorting-item">
