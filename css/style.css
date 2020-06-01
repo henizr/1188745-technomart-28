@@ -57,3 +57,8 @@
 }
 a { text-decoration: none; }
 *, *::before, *::after { box-sizing: border-box; }
+.modal-map,
+.modal-feedback,
+.catalog-modal {
+    display: none;
+}
