@@ -149,10 +149,12 @@ body {
     opacity: 1;
 }
 .main-header__top .bookmarks:active {
-    opacity: 0.3;
+    color: var(--color-basic-white-transparent-30);
     background-color: var(--color-basic-dark);
 }
-
+.main-header__top .bookmarks:active::before {
+    opacity: 0.3;
+}
 /* basket */
 .main-header__top .basket {
     display: inline-block;
@@ -174,6 +176,9 @@ body {
 .main-header__top .basket:active {
     color: var(--color-basic-white-transparent-30);
     background-color: var(--color-basic-dark);
+}
+.main-header__top .basket:active::before {
+    opacity: 0.3;
 }
 
 .main-header__top .order {
