@@ -49,6 +49,8 @@
     --color-basic-background: #F1F5F7;
     --color-basic-white: #FFFFFF;
     --color-basic-white-transparent-30: rgba(255,255,255, 0.3);
+    --color-basic-white-transparent-50: rgba(255,255,255, 0.5);
+    --color-basic-darknight: #1D2739;
     --color-basic-black: #000000;
     --color-special-yellow: #FFBF47;
     --color-special-blue: #3BBCE3;
@@ -254,6 +256,14 @@ body {
 .main-navigation {
     background-color: var(--color-basic-blue);
 }
-.main-navigation .main-navigation-link{
+.main-navigation__link{
     color: var(--color-basic-white);
 }
+.main-navigation__link:hover {
+    background-color: var(--color-basic-darkblue);
+}
+.main-navigation__link:active {
+    color: var(--color-basic-white-transparent-50);
+    background-color: var(--color-basic-darknight);
+}
+
