@@ -52,6 +52,7 @@
     --color-basic-greydark: #A9A9A9;
     --color-basic-background: #F1F5F7;
     --color-basic-background-transparent-50: rgba(241, 245, 247, 0.5);
+    --color-basic-background-light: #F2F6F8;
     --color-basic-white: #FFFFFF;
     --color-basic-white-transparent-30: rgba(255,255,255, 0.3);
     --color-basic-white-transparent-50: rgba(255,255,255, 0.5);
@@ -188,6 +189,9 @@ body {
 }
 .main-header__top .basket:active::before {
     opacity: 0.3;
+}
+.basket_active {
+    background-color: var(--color-basic-red);
 }
 .main-header__top .order {
     background-color: var(--color-basic-green);
@@ -488,8 +492,10 @@ body {
 .main-title {
     font-size: 30px;
     line-height: 30px;
+    font-weight: normal;
     text-transform: uppercase;
-    background-color: var(--color-basic-background);
+    color: var(--color-basic-blue);
+    background-color: var(--color-basic-background-light);
 }
 .filters legend {
     font-family: 'PT Sans';
@@ -498,11 +504,15 @@ body {
     line-height: 30px;
     text-transform: uppercase;
 }
+fieldset:nth-child(3) legend {
+    letter-spacing: 0.0484964px;;
+}
 .filters label{
     font-family: 'PT Sans';
     font-size: 15px;
     line-height: 19px;
     text-transform: uppercase;
+    background-color: var(--color-basic-white);
 }
 .filters button {
     font-family: 'PT Sans';
@@ -529,6 +539,7 @@ body {
     text-align: center;
 }
 .catalog__link {
+    font-size: 18px;
     color: var(--color-basic-black);
 }
 .catalog__item .old-price,
@@ -593,6 +604,9 @@ body {
 }
 .catalog__item-buttons button:nth-child(2):active {
     border-color: var(--color-basic-blue-transparent-50);
+}
+.catalog__item-buttons {
+    display: none;
 }
 .catalog__item_status_new::after {
     position: absolute;
