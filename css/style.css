@@ -506,6 +506,7 @@ fieldset:nth-child(3) legend {
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
+    background-color: var(--color-basic-white);
 }
 .catalog {
     font-family: 'PT Sans'; 
