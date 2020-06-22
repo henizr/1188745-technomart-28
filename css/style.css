@@ -65,6 +65,7 @@
     --color-basic-white-transparent-50: rgba(255,255,255, 0.5);
     --color-basic-darknight: #1D2739;
     --color-basic-black: #000000;
+    --color-basic-orangelight:#F7F3EC;
     --color-special-yellow: #FFBF47;
     --color-special-orange: #FFC047;
     --color-special-blue: #3BBCE3;
@@ -167,7 +168,7 @@ body {
     opacity: 1;
 }
 .main-header__top .bookmarks:active {
-    color: var(--color-basic-white-transparent-30);
+    color: var(--color-basic-white-transparent-50);
     background-color: var(--color-basic-dark);
 }
 .main-header__top .bookmarks:active::before {
@@ -857,4 +858,44 @@ fieldset:nth-child(3) legend {
     background-size: 465px 285px;  
     width: 465px;
     height: 285px;
+}
+
+.catalog__header {
+    background-color: var(--color-basic-orangelight);
+}
+.catalog__header p {
+    font-size: 13px;
+    line-height: 18px;
+}
+.catalog-sorting-item button {
+    font-size: 13px; 
+    line-height: 18px; 
+    opacity: 0.3; 
+    background-color: var(--color-basic-transparent);
+}
+.catalog-sorting-item_active button{
+    color: var(--color-basic-red); 
+}
+.catalog-sorting-item button:hover {
+    opacity: 1;
+}
+.catalog-sorting-item button:active {
+    color: var(--color-basic-red);
+}
+.catalog__pagination-link {
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--color-basic-black);
+}
+.catalog__pagination-item_active {
+    background-color: var(--color-basic-red);
+}
+.about-perforators__title {
+    font-weight: normal; 
+    font-size: 30px;
+    line-height: 30px;
+}
+.about-perforators__inner р {
+    font-family: 'PT Sans'; 
+    font-size: 13px;
 }
