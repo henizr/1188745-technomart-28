@@ -875,12 +875,14 @@ fieldset:nth-child(3) legend {
 }
 .catalog-sorting-item_active button{
     color: var(--color-basic-red); 
+    opacity: 1;
 }
 .catalog-sorting-item button:hover {
     opacity: 1;
 }
 .catalog-sorting-item button:active {
     color: var(--color-basic-red);
+    opacity: 1;
 }
 .catalog__pagination-link {
     font-size: 13px;
