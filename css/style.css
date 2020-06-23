@@ -892,12 +892,14 @@ fieldset:nth-child(3) legend {
 .catalog__pagination-item_active {
     background-color: var(--color-basic-red);
 }
-.about-perforators__title {
+.about-perforators__title{
     font-weight: normal; 
     font-size: 30px;
     line-height: 30px;
 }
-.about-perforators__inner р {
+.about-perforators__inner p {
     font-family: 'PT Sans'; 
     font-size: 13px;
 }
+
+
