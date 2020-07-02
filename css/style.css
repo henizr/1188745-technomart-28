@@ -436,7 +436,7 @@ body {
     background-color: var(--color-error);
 }
 .promo {
-    position: relative;
+    margin-top: 69px;
 }
 .addition-navigation,
 .promo-navigation {
@@ -455,8 +455,6 @@ body {
     margin-top: 45px;
     width: 524px;
 }
-
-
 .addition-navigation__link{
     color: var(--color-basic-background);
 }
@@ -914,6 +912,11 @@ fieldset:nth-child(3) legend {
     transform: rotate(45deg);
 }
 .promo-products-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    min-height: 38px;
     text-transform: uppercase;
     color: var(--color-basic-white);
     font-size: 14px;
@@ -991,10 +994,7 @@ fieldset:nth-child(3) legend {
     margin-right: auto;
 }
 .promo__slider {
-    position: absolute;
-    top: 130px;
-    width: 620px;
-    height: 266px;
+    height: 100%;
     background-color: var(--color-basic-grey);
 }
 .promo__slider h3 {
@@ -1003,6 +1003,7 @@ fieldset:nth-child(3) legend {
     font-size: 36px;
     line-height: 36px;
     color: var(--color-basic-white);
+    margin: 0;
 }
 .promo__slider p {
     color: var(--color-basic-white);
@@ -1327,7 +1328,7 @@ fieldset:nth-child(3) legend {
 .promo__products-list {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto 123px auto;
     gap: 20px;
     list-style: none;
     margin: 0;
@@ -1335,12 +1336,25 @@ fieldset:nth-child(3) legend {
 }
 .promo__products-item {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     width: 300px;
     overflow: hidden;
     padding-top: 20px;
     padding-left: 23px;
     padding-bottom: 21px;
+    padding-right: 43px;
+    min-height: 123px;
+}
+.promo__products-item:last-child {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-column-end: 3;
+    display: block;
+    width: 620px;
+    min-height: 266px;
+    padding: 0;
 }
 .promo__products-item:nth-child(1){
     background-color: var(--color-special-yellow);
@@ -1407,4 +1421,10 @@ fieldset:nth-child(3) legend {
 .promo__products-item:nth-child(5) {
     grid-column-start: 3;
     grid-row-start: 3;
+}
+.range-start-end-labels {
+    display: flex;
+}
+.range-start-end-labels input {
+    width: 95px;
 }
