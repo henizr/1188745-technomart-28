@@ -1110,8 +1110,28 @@ fieldset:nth-child(3) legend {
     line-height: 18px;
     color: var(--color-basic-black);
 }
+.catalog__pagination-item:not(:last-child) {
+    flex-basis: 38px;
+}
+.catalog__pagination-item:last-child {
+    flex-basis: 140px;
+}
+.catalog__pagination-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    background: var(--color-basic-white);
+    border: 1px solid var(--color-greylight);
+    box-sizing: border-box;
+    border-radius: 2px;
+}
 .catalog__pagination-item_active {
     background-color: var(--color-basic-red);
+    border-color: var(--color-basic-white);
+}
+.catalog__pagination-item_active a { 
+    color: var(--color-basic-white);
 }
 .about-perforators {
     background-color: var(--color-basic-background);
@@ -1201,6 +1221,9 @@ fieldset:nth-child(3) legend {
 }
 .catalog__pagination-list {
     display: flex;
+    height: 38px;
+    margin-top: 48px;
+    margin-bottom: 59px;
 }
 .filters-title {
     font-family: 'PT Sans';
