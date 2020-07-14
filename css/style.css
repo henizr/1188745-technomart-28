@@ -272,7 +272,7 @@ body {
     color: var(--color-basic-red);
 }
 .main-header__info  .phone {
-    display: inline-block;
+    display: block;
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
@@ -308,7 +308,7 @@ body {
     margin-left: 72px;
 }
 .guest-navigation__link {
-    display: inline-block;
+    display: block;
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: var(--color-basic-white);
@@ -424,6 +424,7 @@ body {
 }
 .main-footer__logo {
     display: inline-block;
+    vertical-align: auto;
     padding-top: 20px;
     padding-bottom: 25px;
     padding-left: 41px;
@@ -658,6 +659,7 @@ body {
 }
 .breadcrumbs__item:not(:last-child) .breadcrumbs__link::after {
     display: inline-block;
+    vertical-align: auto;
     content: '';
     width: 8px;
     height: 12px;
@@ -846,6 +848,7 @@ fieldset:nth-child(3) legend {
 .catalog__item-buttons button:nth-child(1),
 .popular-goods-item .buttons button:nth-child(1) {
     display: inline-block;
+    vertical-align: auto;
     background-color: var(--color-basic-green);
     color: var(--color-basic-white);
     border-radius: 2px;
@@ -855,6 +858,7 @@ fieldset:nth-child(3) legend {
 .popular-goods-item .buttons button:nth-child(1)::before{
     content: '';
     display: inline-block;
+    vertical-align: auto;
     width: 15px;
     height: 15px;
     background-image: url('../img/icon-cart.svg');
@@ -875,6 +879,7 @@ fieldset:nth-child(3) legend {
 .catalog__item-buttons button:nth-child(2),
 .popular-goods-item .buttons button:nth-child(2) {
     display: inline-block;
+    vertical-align: auto;
     background-color: var(--color-basic-white);
     color: var(--color-basic-blue);
     border: 3px solid var(--color-basic-green);
